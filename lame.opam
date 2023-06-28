@@ -29,4 +29,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/savonet/ocaml-lame.git"
+dev-repo: "git+https://github.com/ssppkenny/ocaml-lame.git"
