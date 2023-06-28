@@ -13,7 +13,7 @@ int main()
 }
 |}
 
-let link_flags = ["-lmp3lame"; "-lm"]
+let link_flags = ["-I/opt/homebrew/opt/lame/include";"-L/opt/homebrew/opt/lame/lib";"-lmp3lame"; "-lm"]
 
 let () =
   C.main ~name:"ocaml-lame" (fun c ->
