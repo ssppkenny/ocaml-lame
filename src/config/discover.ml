@@ -21,5 +21,5 @@ let () =
         [("BIGENDIAN", Switch (is_big_endian ()))];
 
       assert (C.c_test ~link_flags c has_lame_h_code);
-      C.Flags.write_sexp "c_flags.sexp" [];
+      C.Flags.write_sexp "c_flags.sexp" ["-I/opt/homebrew/opt/lame/include"];
       C.Flags.write_sexp "c_library_flags.sexp" link_flags)
